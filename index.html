@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicons -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="my.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>ТрансСтройСервис</title>
+</head>
+
+<body>
+
+	<!-- Sprit -->
+
+	<svg style="display: none;">
+		<symbol id="location" viewBox="0 0 384 512">
+			<g>
+				<path
+					d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+			</g>
+		</symbol>
+
+		<symbol id="phone" viewBox="0 0 512 512">
+			<g>
+				<path
+					d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z" />
+			</g>
+		</symbol>
+
+		<symbol id="modal_phone" viewBox="0 0 448 512">
+			<g>
+				<path
+					d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z" />
+			</g>
+		</symbol>
+
+		<symbol id="email" viewBox="0 0 512 512">
+			<g>
+				<path
+					d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+			</g>
+		</symbol>
+	</svg>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo"><img src="img/logo/logo1.png" alt="logo"></div>
+				<nav class="nav" id="nav">
+					<a href="#" class="nav_link" data-scroll="#services">Услуги</a>
+					<a href="#" class="nav_link" data-scroll="#contacts">Контакты</a>
+				</nav>
+				<button class="burger" type="button" id="navToggle">
+					<span class="burger_item">Menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Intro -->
+	<div class="intro">
+		<div class="container">
+			<div class="intro_inner">
+				<h1 class="intro_title">Транспортная компания ТрансСтройСервис</h1>
+				<h2 class="intro_subtitle">Перевозка грузов железнодорожным транспортом</h2>
+				<a href="#" class="btn" data-modal="#modal_question">задать вопрос</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section_title section_title--bl">Услуги</div>
+			<div class="services">
+				<div class="services_item">
+					<img src="img/services/train-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Наша компания предлагает под погрузку крытые и багажные вагоны, а так же полувагоны
+						и
+						платформы</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/rails.svg" alt="" class="services_icon">
+					<div class="services_text">Перевозка грузов в любом направлении</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/dolly-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Осуществляем перевозку груза любого формата и объема</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/box-open-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Производим прием, хранение и переработку груза наших клиентов</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/manipulator.svg" alt="" class="services_icon">
+					<div class="services_text">Услуги спецтехники (манипулятор)</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/truck-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Возможен забор грузов с транспортных компаний г. Тында</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="footer_inner">
+				<div class="footer_title">Контакты</div>
+				<div class="footer_item">
+					<div class="footer_block">
+						<svg class="footer_block_icon">
+							<use xlink:href="#location"></use>
+						</svg>
+						<div class="footer_block_title">Адрес:</div>
+						<div class="footer_text">
+							Амурская обл., г. Тында, <br> ул. Красноармейская 11, <br> офис 201
+						</div>
+					</div>
+
+					<div class="footer_block">
+						<svg class="footer_block_icon">
+							<use xlink:href="#email"></use>
+						</svg>
+						<div class="footer_block_title">E-mail:</div>
+						<div class="footer_text">
+							service-tynda@yandex.ru
+						</div>
+					</div>
+
+					<div class="footer_block">
+						<svg class="footer_block_icon">
+							<use xlink:href="#phone"></use>
+						</svg>
+						<div class="footer_block_title">Телефоны:</div>
+						<div class="footer_text">
+							+7 914 601 55 59 <br> +7 914 575 45 77
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="copyright_text">
+					&copy; OOO "ТрансСтройСервис 2021-2022"
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal" id="modal_question">
+		<div class="modal_dialog">
+
+			<button type="button" class="modal_close" data-close>
+				<img src="img/close1.svg" alt="close">
+			</button>
+
+			<div class="contact">
+				<h1 class="modal_title">задать вопрос</h1>
+				<div class="modal_subtitle">Позвоните нам или отправте сообщение</div>
+				<ul class="contact_info">
+					<li class="contact_info-item">
+						<svg class="contact_info-icon--phone">
+							<use xlink:href="#modal_phone"></use>
+						</svg>
+						+7 914 601 55 59 <br> +7 914 575 45 77
+					</li>
+					<li class="contact_info-item">
+						<svg class="contact_info-icon">
+							<use xlink:href="#email"></use>
+						</svg>
+						service-tynda@yandex.ru
+					</li>
+				</ul>
+				<form action="/" method="post">
+					<div class="form_group">
+						<label for="input-email" class="form_label"> E-mail</label>
+						<input type="text" class="form_input" name="input-email" placeholder="E-mail" id="input-email">
+					</div>
+					<div class="form_group">
+						<label for="input-text" class="form_label">Сообщение</label>
+						<textarea name="imput_text" id="imput_text" class="form_textarea"
+							placeholder="Введите ваше сообщение..."></textarea>
+					</div>
+					<div class="text_right">
+						<button class="btn btn--round" type="submit">отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
