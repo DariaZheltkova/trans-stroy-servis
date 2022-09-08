@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<body>
+
+	<!-- Sprit -->
+
+	<svg style="display: none;"> 
+		<symbol id="close" viewBox="0 0 512 512">
+		<g>
+			<path
+				d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+		</g>
+		</symbol>
+
+	</svg>
+
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="my.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<title>ТрансСтройСервис</title>
+	</head>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<div class="header_logo"><img src="img/logo/logo1.png" alt="logo"></div>
+				<nav class="nav" id="nav">
+					<a href="#" class="nav_link" data-scroll="#services">Услуги</a>
+					<a href="#" class="nav_link" data-scroll="#contacts">Контакты</a>
+				</nav>
+				<button class="burger" type="button" id="navToggle">
+					<span class="burger_item">Menu</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Intro -->
+	<div class="intro">
+		<div class="container">
+			<div class="intro_inner">
+				<h1 class="intro_title">Транспортная компания
+					ТрансСтройСервис</h1>
+				<h2 class="intro_subtitle">Перевозка грузов железнодорожным транспортом</h2>
+				<a href="#" class="btn" data-modal="#modal_question">задать вопрос</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+	<section class="section" id="services">
+		<div class="container">
+			<div class="section_title section_title--bl">Услуги</div>
+			<div class="services">
+				<div class="services_item">
+					<img src="img/services/train-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Наша компания предлагает под погрузку крытые и багажные вагоны, а так же полувагоны
+						и
+						платформы</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/rails.svg" alt="" class="services_icon">
+					<div class="services_text">Перевозка грузов в любом направлении</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/dolly-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Осуществляем перевозку груза любого формата и объема</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/box-open-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Производим прием, хранение и переработку груза наших клиентов</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/manipulator.svg" alt="" class="services_icon">
+					<div class="services_text">Услуги спецтехники (манипулятор)</div>
+				</div>
+				<div class="services_item">
+					<img src="img/services/truck-solid.svg" alt="" class="services_icon">
+					<div class="services_text">Возможен забор грузов с транспортных компаний г. Тында</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="footer_inner">
+				<div class="footer_title">Контакты</div>
+				<div class="footer_item">
+					<div class="footer_block">
+
+						<img src="img/contacts/location-dot-solid.svg" alt="location" class="footer_block_icon" width="15px"
+							height="15px">
+						<div class="footer_block_title">Адрес:</div>
+
+						<div class="footer_text">
+							Амурская обл., г. Тында, <br> ул. Красноармейская 11, <br> офис 201
+						</div>
+					</div>
+
+
+					<div class="footer_block">
+
+						<img src="img/contacts/envelope-solid.svg" alt="email" class="footer_block_icon" width="15px" height="15px">
+						<div class="footer_block_title">E-mail:</div>
+
+						<div class="footer_text">
+							service-tynda@yandex.ru
+						</div>
+					</div>
+
+
+					<div class="footer_block">
+
+						<img src="img/contacts/phone-solid.svg" alt="phone" class="footer_block_icon" width="15px" height="15px">
+						<div class="footer_block_title">Телефоны:</div>
+
+						<div class="footer_text">
+							+7 914 601 55 59 <br> +7 914 575 45 77
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright">
+			<div class="container">
+				<div class="copyright_text">
+					&copy; OOO "ТрансСтройСервис 2021-2022"
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Modal -->
+	<div class="modal" id="modal_question">
+		<div class="modal_dialog">
+
+			<button type="button" class="modal_close" data-close>
+				<img src="img/close1.svg" alt="close">
+				<!-- <svg>
+					<use xlink:href="#close"></use>
+				</svg> -->
+			</button>
+
+			<div class="contact">
+				<h1 class="modal_title">задать вопрос</h1>
+				<div class="modal_subtitle">Позвоните нам или отправте сообщение</div>
+				<ul class="contact_info">
+					<li class="contact_info-item"><img class="contact_info-icon" src="img/contacts/phone.svg" alt="phone"> +7 914
+						601
+						55 59 <br> +7 914 575 45 77
+					</li>
+					<li class="contact_info-item"><img class="contact_info-icon" src="img/contacts/message.svg"
+							alt="email">service-tynda@yandex.ru</li>
+				</ul>
+				<form action="/" method="post">
+					<div class="form_group">
+						<label for="input-email" class="form_label"> E-mail</label>
+						<input type="text" class="form_input" name="input-email" placeholder="E-mail" id="input-email">
+					</div>
+					<div class="form_group">
+						<label for="input-text" class="form_label">Сообщение</label>
+						<textarea name="imput_text" id="imput_text" class="form_textarea"
+							placeholder="Введите ваше сообщение..."></textarea>
+					</div>
+					<div class="text_right">
+						<button class="btn btn--round" type="submit">отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
